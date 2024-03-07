@@ -14,7 +14,7 @@ AS a user I want to create a code that generates a password.
 
 * It is done when prompted for the length of the password and the range being between 8 and 128 characters.
 
-* It is done when the user is asked for charater types and confirming whether or not which ones to include (e.g. lowercase, uppercase, numeric, and/or spe4cial characters).
+* It is done when the user is asked for charater types and confirming whether or not which ones to include (e.g. lowercase, uppercase, numeric, and/or special characters).
 
 * It is done when the input is validated and at least one character type should be selected.
 
