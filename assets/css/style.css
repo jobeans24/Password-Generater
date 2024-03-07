@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Add the border-box model */
+}
+
+html,
+body,
+.wrapper {
+  height: 100%; /* Make the wrapper 100% height */
+  margin: 0; /* Remove the margin */
+  padding: 0; /* Remove the padding */
+}
+
+body { /* Add a body */
+    font-family: sans-serif; /* Use a sans-serif font */
+    background-color: white; /* White */
+}
+
+.wrapper { /* Add a wrapper */
+    padding-top: 30px; /* Add some padding */
+    padding-left: 20px; /* Add some padding */
+    padding-right: 20px; /* Add some padding */
+}
+
+header { /* Add a header */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Add some padding */
+    padding-top: 0px; /* Remove the top padding */
+    color: hsl(206, 17%, 28%); /* Dark grey */
+}
+
+.container { /* Add a container class */
+    background-color: hsl(0, 0%, 100%); /* White */
+    border-radius: 5px; /* Add a border radius */
+    border-width: 1px; /* Add a border width */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px; /* Add a shadow */
+    color: hsl(206, 17%, 28%); /* Dark grey */
+    font-size: 18px; /* 18px */
+    margin: 0 auto; /* Center the container */
+    max-width: 800px; /* Add a maximum width */
+    padding: 30px 40px; /* Add some padding */
+}
+
+.header::after { /* Add a clearfix */
+    content: ""; /* Add some content */
+    display: block; /* Add a block element */
+    width: 100%; /* Add a line */
+    background: #e7e9eb; /* Add a grey background */
+    height: 2px; /* Add a line */
+}
+
+.content { /* Add a content class */
+    min-height: 100px; /* Add a minimum height */
+}
+
+.footer { /* Add a footer */
+    text-align: center; /* Center the text */
+}
+
+.footer::before { /* Add a line */
+    content: ""; /* Add some content */
+    display: block; /* Add a block element */
+    width: 100%; /* Add a line */
+    background: #e7e9eb; /* Add a grey background */
+    height: 2px; /* Add a line */
+}
+
+.footer::after { /* Add a clearfix */
+    content: ""; /* Add some content */
+    display: block; /* Add a block element */
+    clear: both; /* Clear the float */
+}
+
+.btn {
+    border: none; /* Remove the default border */
+    background-color: hsl(360, 91%, 36%); /* Add a blue background */
+    border-radius: 25px; /* Add a border radius */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px; /* Add a shadow */
+    color: hsl(0, 0, 100%); /* White */
+    display: inline-block; /* Make it an inline element */
+    font-size: 22px; /* Add some font size */
+    line-height: 22px; /* Add some space */
+    margin: 16px 16px 16px 20px; /* Add some space */
+    padding: 14px 34px; /* Add some padding */
+    text-align: center; /* Center the text */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+button[disabled] { /* Add a disabled state */
+    cursor: default; /* Change the cursor to a default */
+    background: #c0c7cf; /* Add a grey background */
+}
+
+.float-right {
+    float: right; /* Float the element to the right */
+}
+
+/* Password input */
+#password {
+    -webkit-appearance: none; /* Safari and Chrome */
+    -moz-appearance: none; /* Firefox */
+    appearance: none; /* Modern Browsers */
+    border: none; /* Remove the default border */
+    display: block; /* Make it a block element */
+    width: 100%; /* Make it as wide as its container */
+    padding-top: 15px; /* Vertical padding */
+    padding-left: 15px; /* Horizontal padding */
+    padding-right: 15px; /* Horizontal padding */
+    padding-bottom: 85px; /* Vertical padding */
+    font-size: 1.2rem; /* this is 20px in rem */
+    margin-top: 10px; /* Add some space at the top */
+    margin-bottom: 10px; /* Add some space at the bottom */
+    border: 2px dashed #c0c7cf; /* Add a grey border */
+    border-radius: 6px; /* Add a border radius */
+    resize: none; /* Disable the resize handle */
+    overflow: hidden; /* Hide the scrollbar */
+}
+
+@media (max-width: 690px) { /* Add a media query */
+    .btn {
+       font-size: 1rem; /* 16px */
+       margin: 16px 0px 0px 0px; /* Add some space at the top */
+       padding: 10px 15px; /* Add some padding */
+    }
+    #password {
+        font-size: 1rem; /* 16px */
+    }
+}
+
+@media (max-width: 500px) { /* Add a media query */
+    .container {
+        padding: 20px; /* Add some padding */
+    }
+    .btn {
+        font-size: 0.8rem; /* 13px */
+        margin: 16px 0px 0px 0px; /* Add some space at the top */
+        padding: 10px 15px; /* Add some padding */
+    } 
+    #password { 
+        font-size: 0.8rem; /* 13px */
+    }
+}
